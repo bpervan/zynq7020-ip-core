@@ -1,0 +1,39 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto fb343f76d1f74518a75b7fa8be319b54 --debug typical --relax --mt 2 -L xil_defaultlib -L proc_common_v3_00_a -L axi_slave_burst_v1_00_a -L unisims_ver -L unimacro_ver -L secureip --snapshot bcrypt_behav xil_defaultlib.bcrypt xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package proc_common_v3_00_a.proc_common_pkg
+Compiling package proc_common_v3_00_a.ipif_pkg
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package proc_common_v3_00_a.family_support
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture imp of entity proc_common_v3_00_a.counter_f [\counter_f(c_num_bits=3)(1,8)\]
+Compiling architecture imp of entity axi_slave_burst_v1_00_a.control_state_machine [\control_state_machine(c_max_bur...]
+Compiling architecture imp of entity axi_slave_burst_v1_00_a.read_data_path [\read_data_path(1,7)\]
+Compiling architecture imp of entity axi_slave_burst_v1_00_a.addr_gen [addr_gen_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture imp of entity proc_common_v3_00_a.pselect_f [\pselect_f(c_ab=20,c_bar="010000...]
+Compiling architecture imp of entity proc_common_v3_00_a.pselect_f [\pselect_f(c_ab=15,c_bar="010000...]
+Compiling architecture imp of entity proc_common_v3_00_a.pselect_f [\pselect_f(c_ab=10,c_bar="010000...]
+Compiling architecture imp of entity axi_slave_burst_v1_00_a.address_decode [\address_decode(c_addr_decode_bi...]
+Compiling architecture imp of entity axi_slave_burst_v1_00_a.axi_slave_burst [\axi_slave_burst(c_ard_addr_rang...]
+Compiling module xil_defaultlib.ram_initialized(ADDR_WIDTH=10,WH...
+Compiling module xil_defaultlib.ram_initialized(ADDR_WIDTH=10)
+Compiling module xil_defaultlib.ram(ADDR_WIDTH=9)
+Compiling module xil_defaultlib.bcrypt_loop
+Compiling module xil_defaultlib.user_logic(C_SLV_AWIDTH=32,C_SLV...
+Compiling architecture imp of entity xil_defaultlib.bcrypt
+Built simulation snapshot bcrypt_behav

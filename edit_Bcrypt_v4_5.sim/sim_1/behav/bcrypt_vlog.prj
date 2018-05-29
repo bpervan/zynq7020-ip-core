@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Bcrypt_4.5/src/bcrypt_loop.v"
+verilog xil_defaultlib  "../../../Bcrypt_4.5/src/ram.v"
+verilog xil_defaultlib  "../../../Bcrypt_4.5/src/ram_initialized.v"
+verilog xil_defaultlib  "../../../Bcrypt_4.5/src/user_logic.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

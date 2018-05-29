@@ -1,0 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcrypt_loop
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_initialized
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/user_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module user_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/edit_Bcrypt_v4_5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/proc_common_pkg.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/addr_gen.vhd" into library axi_slave_burst_v1_00_a
+INFO: [VRFC 10-307] analyzing entity addr_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/ipif_pkg.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/family_support.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/counter_f.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity counter_f
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity pselect_f
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd" into library axi_slave_burst_v1_00_a
+INFO: [VRFC 10-307] analyzing entity address_decode
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/or_gate128.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity or_gate128
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd" into library axi_slave_burst_v1_00_a
+INFO: [VRFC 10-307] analyzing entity control_state_machine
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity cntr_incr_decr_addn_f
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/muxf_struct_f.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity muxf_struct
+INFO: [VRFC 10-307] analyzing entity muxf_struct_f
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/dynshreg_f.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity dynshreg_f
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+INFO: [VRFC 10-307] analyzing entity srl_fifo_rbu_f
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd" into library axi_slave_burst_v1_00_a
+INFO: [VRFC 10-307] analyzing entity read_data_path
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/axi_slave_burst.vhd" into library axi_slave_burst_v1_00_a
+INFO: [VRFC 10-307] analyzing entity axi_slave_burst
+INFO: [VRFC 10-163] Analyzing VHDL file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/bcrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bcrypt

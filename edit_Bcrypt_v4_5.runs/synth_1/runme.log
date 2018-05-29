@@ -1,0 +1,1502 @@
+
+*** Running vivado
+    with args -log bcrypt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcrypt.tcl
+
+
+****** Vivado v2017.2.1 (64-bit)
+  **** SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+  **** IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source bcrypt.tcl -notrace
+Command: synth_design -top bcrypt -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7160 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 367.785 ; gain = 80.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bcrypt' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt.vhd:220]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_RDATA_FIFO_DEPTH bound to: 0 - type: integer 
+	Parameter C_INCLUDE_TIMEOUT_CNT bound to: 1 - type: integer 
+	Parameter C_TIMEOUT_CNTR_VAL bound to: 8 - type: integer 
+	Parameter C_ALIGN_BE_RDADDR bound to: 0 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_S_AXI_MEM0_BASEADDR bound to: 32'b01000000010000100000000000000000 
+	Parameter C_S_AXI_MEM0_HIGHADDR bound to: 32'b01000000010000100000111111111111 
+	Parameter C_S_AXI_MEM1_BASEADDR bound to: 32'b01000000010000000000000000000000 
+	Parameter C_S_AXI_MEM1_HIGHADDR bound to: 32'b01000000010000011111111111111111 
+	Parameter C_S_AXI_MEM2_BASEADDR bound to: 32'b01000000000000000000000000000000 
+	Parameter C_S_AXI_MEM2_HIGHADDR bound to: 32'b01000000001111111111111111111111 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt.vhd:168]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'axi_slave_burst' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/axi_slave_burst.vhd:465]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_RDATA_FIFO_DEPTH bound to: 0 - type: integer 
+	Parameter C_INCLUDE_TIMEOUT_CNT bound to: 1 - type: integer 
+	Parameter C_TIMEOUT_CNTR_VAL bound to: 8 - type: integer 
+	Parameter C_ALIGN_BE_RDADDR bound to: 0 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000100000001000010000000000000000000000000000000000000000000000000010000000100001000001111111111110000000000000000000000000000000001000000010000000000000000000000000000000000000000000000000000000100000001000001111111111111111100000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000001111111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/axi_slave_burst.vhd:386]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/axi_slave_burst.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'control_state_machine' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:847]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_RDATA_FIFO_DEPTH bound to: 0 - type: integer 
+	Parameter C_INCLUDE_TIMEOUT_CNT bound to: 1 - type: integer 
+	Parameter C_TIMEOUT_CNTR_VAL bound to: 8 - type: integer 
+	Parameter C_ALIGN_BE_RDADDR bound to: 0 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MAX_BURST_LENGTH bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:750]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:771]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:779]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:780]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:781]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:881]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:882]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:883]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:895]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:905]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:920]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:926]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:954]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/counter_f.vhd:152]
+	Parameter C_NUM_BITS bound to: 3 - type: integer 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (1#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/counter_f.vhd:152]
+WARNING: [Synth 8-6014] Unused sequential element ADDR_SM_NO_RD_DATA_BUFFER_GEN.rst_axi_last_rd_data_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:1445]
+WARNING: [Synth 8-6014] Unused sequential element len_reg_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:1721]
+WARNING: [Synth 8-6014] Unused sequential element Rst_Rd_CE_int_d1_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:1791]
+WARNING: [Synth 8-6014] Unused sequential element last_rd_addr_ack_reg_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:1843]
+WARNING: [Synth 8-3848] Net load_addr_fifo in module/entity control_state_machine does not have driver. [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:836]
+INFO: [Synth 8-256] done synthesizing module 'control_state_machine' (2#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/control_state_machine.vhd:847]
+INFO: [Synth 8-638] synthesizing module 'read_data_path' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:304]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_RDATA_FIFO_DEPTH bound to: 0 - type: integer 
+	Parameter C_INCLUDE_TIMEOUT_CNT bound to: 1 - type: integer 
+	Parameter C_TIMEOUT_CNTR_VAL bound to: 8 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:323]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "30" *) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:342]
+INFO: [Synth 8-226] default block is never used [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:635]
+WARNING: [Synth 8-6014] Unused sequential element active_high_rst_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:373]
+WARNING: [Synth 8-6014] Unused sequential element last_rd_data_d1_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:599]
+WARNING: [Synth 8-6014] Unused sequential element reset_addr_fifo_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:632]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_sm_ps_rest_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:772]
+WARNING: [Synth 8-6014] Unused sequential element wr_cycle_reg_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:788]
+WARNING: [Synth 8-3848] Net LAST_data_from_FIFO in module/entity read_data_path does not have driver. [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:291]
+WARNING: [Synth 8-3848] Net No_addr_space in module/entity read_data_path does not have driver. [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:292]
+INFO: [Synth 8-256] done synthesizing module 'read_data_path' (3#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/read_data_path.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'addr_gen' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/addr_gen.vhd:282]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RDATA_FIFO_DEPTH bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element Bus2IP_Addr_bkp_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/addr_gen.vhd:329]
+WARNING: [Synth 8-6014] Unused sequential element BUS2IP_ADDR_GEN_DATA_WDTH_32.internal_count_bkp_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/addr_gen.vhd:413]
+INFO: [Synth 8-256] done synthesizing module 'addr_gen' (4#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/addr_gen.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'address_decode' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:193]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_DECODE_BITS bound to: 32 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000100000001000010000000000000000000000000000000000000000000000000010000000100001000001111111111110000000000000000000000000000000001000000010000000000000000000000000000000000000000000000000000000100000001000001111111111111111100000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000001111111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:169]
+	Parameter C_AB bound to: 20 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 1078067200 - type: integer 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (5#1) [D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (6#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:169]
+	Parameter C_AB bound to: 15 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 1077936128 - type: integer 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (6#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:169]
+	Parameter C_AB bound to: 10 - type: integer 
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 1073741824 - type: integer 
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:21613' bound to instance 'MUXCY_I' of component 'MUXCY' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (6#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/pselect_f.vhd:169]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[0].cs_reg_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:417]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[0].cs_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:428]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[0].rdce_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:443]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[0].wrce_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:458]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[1].cs_reg_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:417]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[1].cs_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:428]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[1].rdce_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:443]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[1].wrce_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:458]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[2].cs_reg_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:417]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[2].cs_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:428]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[2].rdce_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:443]
+WARNING: [Synth 8-6014] Unused sequential element MEM_DECODE_GEN[2].wrce_out_i_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:458]
+INFO: [Synth 8-256] done synthesizing module 'address_decode' (7#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/address_decode.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'axi_slave_burst' (8#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/axi_slave_burst.vhd:465]
+	Parameter C_SLV_AWIDTH bound to: 32 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_MEM bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'user_logic' declared at 'd:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:9' bound to instance 'USER_LOGIC_I' of component 'user_logic' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt.vhd:421]
+INFO: [Synth 8-638] synthesizing module 'user_logic' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:9]
+	Parameter C_SLV_AWIDTH bound to: 32 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_MEM bound to: 3 - type: integer 
+	Parameter NUM_CORES bound to: 28 - type: integer 
+	Parameter NUM_BYTE_LANES bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ram_initialized' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v:10]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WHICH bound to: 0 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'others_half1.mif' is read successfully [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ram_initialized' (9#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v:10]
+INFO: [Synth 8-638] synthesizing module 'ram_initialized__parameterized0' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v:10]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WHICH bound to: 1 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'others_half2.mif' is read successfully [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v:30]
+INFO: [Synth 8-256] done synthesizing module 'ram_initialized__parameterized0' (9#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v:10]
+INFO: [Synth 8-638] synthesizing module 'bcrypt_loop' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:9]
+	Parameter INIT bound to: 4'b0000 
+	Parameter P_XOR_EXP bound to: 4'b0001 
+	Parameter ENCRYPT_INIT bound to: 4'b0010 
+	Parameter FEISTEL bound to: 4'b0011 
+	Parameter STORE_L_R bound to: 4'b0100 
+	Parameter P_XOR_SALT bound to: 4'b0101 
+	Parameter LOOP bound to: 4'b0110 
+	Parameter DONE bound to: 4'b0111 
+	Parameter SET bound to: 4'b1000 
+	Parameter LOAD_S bound to: 4'b1100 
+	Parameter UPDATE_L_R bound to: 4'b1101 
+	Parameter XOR_SALT bound to: 4'b1110 
+	Parameter FINAL bound to: 4'b1111 
+	Parameter C_MST_NATIVE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_LENGTH_WIDTH bound to: 12 - type: integer 
+	Parameter C_MST_AWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_REG bound to: 6 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ram' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram.v:10]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ram' (10#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/ram.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:289]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:308]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:326]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:346]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:364]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:468]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:548]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:566]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:581]
+WARNING: [Synth 8-6014] Unused sequential element P_or_S_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:809]
+WARNING: [Synth 8-6014] Unused sequential element wea_1_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:149]
+WARNING: [Synth 8-6014] Unused sequential element web_1_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:150]
+WARNING: [Synth 8-6014] Unused sequential element addrb_1_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:152]
+WARNING: [Synth 8-6014] Unused sequential element web_S1_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:132]
+WARNING: [Synth 8-6014] Unused sequential element web_S2_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:133]
+WARNING: [Synth 8-6014] Unused sequential element wea_S3_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:134]
+WARNING: [Synth 8-6014] Unused sequential element web_S3_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:134]
+WARNING: [Synth 8-6014] Unused sequential element wea_S4_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:135]
+WARNING: [Synth 8-6014] Unused sequential element web_S4_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:135]
+WARNING: [Synth 8-6014] Unused sequential element wea_S5_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:136]
+WARNING: [Synth 8-6014] Unused sequential element web_S5_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:136]
+WARNING: [Synth 8-6014] Unused sequential element wea_S6_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:137]
+WARNING: [Synth 8-6014] Unused sequential element web_S6_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:137]
+WARNING: [Synth 8-6014] Unused sequential element wea_S7_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:138]
+WARNING: [Synth 8-6014] Unused sequential element web_S7_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:138]
+WARNING: [Synth 8-6014] Unused sequential element wea_S8_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:139]
+WARNING: [Synth 8-6014] Unused sequential element web_S8_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:139]
+INFO: [Synth 8-256] done synthesizing module 'bcrypt_loop' (11#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:202]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:199]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:244]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:241]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:285]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:283]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:324]
+WARNING: [Synth 8-6014] Unused sequential element write_enable_reg[2] was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:166]
+WARNING: [Synth 8-6014] Unused sequential element data_in_reg[2] was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:167]
+WARNING: [Synth 8-6014] Unused sequential element data_in_reg[1] was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:167]
+WARNING: [Synth 8-6014] Unused sequential element check_done[0].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[1].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[2].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[3].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[4].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[5].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[6].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[7].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[8].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[9].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[10].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[11].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[12].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[13].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[14].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[15].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[16].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[17].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[18].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[19].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[20].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[21].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[22].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[23].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[24].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[25].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[26].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element check_done[27].done_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:127]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[0].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:102]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[1].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[2].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[3].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[4].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[5].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[6].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[7].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[8].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[9].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[10].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[11].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[12].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[13].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[14].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[15].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[16].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[17].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[18].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[19].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[20].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[21].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[22].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[23].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[24].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[25].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[26].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+WARNING: [Synth 8-6014] Unused sequential element start_cores[27].start_reg was removed.  [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:141]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net Type_of_xfer in module/entity user_logic does not have driver. [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:50]
+INFO: [Synth 8-256] done synthesizing module 'user_logic' (12#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bcrypt' (13#1) [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/bcrypt.vhd:220]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Type_of_xfer
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[31]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[30]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[29]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[28]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[27]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[26]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[25]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[24]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[23]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[22]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[21]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[20]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[19]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[18]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[17]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[16]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[1]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Addr[0]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_RNW
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_Burst
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[7]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[6]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[5]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[4]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[3]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[2]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[1]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_BurstLength[0]
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_RdReq
+WARNING: [Synth 8-3331] design user_logic has unconnected port Bus2IP_WrReq
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[10]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[11]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[12]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[13]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[14]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[15]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[16]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[17]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[18]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[19]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[20]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[21]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[22]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[23]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[24]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[25]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[26]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[27]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[28]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[29]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[30]
+WARNING: [Synth 8-3331] design pselect_f__parameterized1 has unconnected port A[31]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[15]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[16]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[17]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[18]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[19]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[20]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[21]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[22]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[23]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[24]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[25]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[26]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[27]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[28]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[29]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[30]
+WARNING: [Synth 8-3331] design pselect_f__parameterized0 has unconnected port A[31]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[20]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[21]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[22]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[23]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[24]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[25]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[26]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[27]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[28]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[29]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[30]
+WARNING: [Synth 8-3331] design pselect_f has unconnected port A[31]
+WARNING: [Synth 8-3331] design addr_gen has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design addr_gen has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design addr_gen has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design addr_gen has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design addr_gen has unconnected port RNW_cmb
+WARNING: [Synth 8-3331] design addr_gen has unconnected port axi_cycle_cmb
+WARNING: [Synth 8-3331] design addr_gen has unconnected port Next_addr_strobe
+WARNING: [Synth 8-3331] design addr_gen has unconnected port Rdce_ored
+WARNING: [Synth 8-3331] design addr_gen has unconnected port IP2Bus_WrAck
+WARNING: [Synth 8-3331] design addr_gen has unconnected port IP2Bus_RdAck
+WARNING: [Synth 8-3331] design addr_gen has unconnected port Data_Timeout
+WARNING: [Synth 8-3331] design read_data_path has unconnected port LAST_data_from_FIFO
+WARNING: [Synth 8-3331] design read_data_path has unconnected port No_addr_space
+WARNING: [Synth 8-3331] design read_data_path has unconnected port IP2Bus_AddrAck
+WARNING: [Synth 8-3331] design read_data_path has unconnected port Last_rd_data_ipic
+WARNING: [Synth 8-3331] design read_data_path has unconnected port Rdce_ored
+WARNING: [Synth 8-3331] design read_data_path has unconnected port load_addr_fifo
+WARNING: [Synth 8-3331] design control_state_machine has unconnected port load_addr_fifo
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 480.004 ; gain = 192.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 480.004 ; gain = 192.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 480.004 ; gain = 192.617
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/counter_f.vhd:292]
+INFO: [Synth 8-5544] ROM "addr_sm_ns_IDLE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_sm_ns_WAIT_WR_DATA" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_data_sm_ns_IDLE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "L1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "L1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "R1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_ip2bus_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_handshake" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-327] inferring latch for variable 'mem_ip2bus_data_reg' [d:/Projects/CoolCracker/Vivado/ip_repo/Bcrypt_4.5/src/user_logic.v:322]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 497.211 ; gain = 209.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |bcrypt_loop     |          14|     13961|
+|2     |user_logic__GC0 |           1|     15674|
+|3     |bcrypt__GC0     |           1|      1479|
++------+----------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 126   
+	   2 Input     12 Bit       Adders := 14    
+	   2 Input     11 Bit       Adders := 14    
+	   2 Input     10 Bit       Adders := 84    
+	   2 Input      9 Bit       Adders := 42    
+	   2 Input      8 Bit       Adders := 114   
+	   3 Input      8 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 42    
+	   2 Input      6 Bit       Adders := 29    
+	   2 Input      5 Bit       Adders := 28    
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 14    
++---XORs : 
+	   2 Input     32 Bit         XORs := 252   
+	   3 Input     32 Bit         XORs := 28    
+	   2 Input      8 Bit         XORs := 280   
+	   3 Input      8 Bit         XORs := 56    
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 411   
+	               11 Bit    Registers := 14    
+	               10 Bit    Registers := 14    
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 28    
+	                4 Bit    Registers := 21    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 46    
+	                1 Bit    Registers := 148   
++---RAMs : 
+	              32K Bit         RAMs := 28    
+	              16K Bit         RAMs := 112   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1071  
+	   4 Input     32 Bit        Muxes := 44    
+	   5 Input     32 Bit        Muxes := 84    
+	   9 Input     32 Bit        Muxes := 56    
+	   7 Input     32 Bit        Muxes := 224   
+	   3 Input     32 Bit        Muxes := 30    
+	  29 Input     32 Bit        Muxes := 28    
+	   2 Input     31 Bit        Muxes := 28    
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 351   
+	   6 Input     10 Bit        Muxes := 14    
+	   8 Input     10 Bit        Muxes := 14    
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 476   
+	   6 Input      9 Bit        Muxes := 224   
+	   2 Input      8 Bit        Muxes := 6     
+	   9 Input      7 Bit        Muxes := 28    
+	   2 Input      7 Bit        Muxes := 197   
+	   3 Input      7 Bit        Muxes := 28    
+	  29 Input      7 Bit        Muxes := 28    
+	   4 Input      6 Bit        Muxes := 28    
+	   2 Input      6 Bit        Muxes := 33    
+	   2 Input      5 Bit        Muxes := 14    
+	   2 Input      4 Bit        Muxes := 56    
+	   4 Input      4 Bit        Muxes := 15    
+	   8 Input      4 Bit        Muxes := 14    
+	   3 Input      4 Bit        Muxes := 7     
+	  10 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 15    
+	   3 Input      3 Bit        Muxes := 14    
+	   8 Input      3 Bit        Muxes := 14    
+	   6 Input      3 Bit        Muxes := 28    
+	   6 Input      2 Bit        Muxes := 44    
+	   2 Input      2 Bit        Muxes := 20    
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 505   
+	   9 Input      1 Bit        Muxes := 28    
+	   7 Input      1 Bit        Muxes := 56    
+	  10 Input      1 Bit        Muxes := 42    
+	  11 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 84    
+	  12 Input      1 Bit        Muxes := 28    
+	   4 Input      1 Bit        Muxes := 131   
+	   3 Input      1 Bit        Muxes := 28    
+	  31 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bcrypt 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ram__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module bcrypt_loop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 18    
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 20    
+	   3 Input      8 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 70    
+	   4 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 6     
+	   9 Input     32 Bit        Muxes := 4     
+	   7 Input     32 Bit        Muxes := 16    
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 23    
+	   6 Input     10 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 34    
+	   6 Input      9 Bit        Muxes := 16    
+	   9 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 6     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   9 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+Module ram_initialized__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ram_initialized__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module user_logic 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 56    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 90    
+	   3 Input     32 Bit        Muxes := 30    
+	   4 Input     32 Bit        Muxes := 1     
+	  29 Input     32 Bit        Muxes := 28    
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 29    
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 113   
+	   3 Input      7 Bit        Muxes := 28    
+	  29 Input      7 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 32    
+	  31 Input      1 Bit        Muxes := 1     
+Module counter_f__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module counter_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module control_state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 12    
+	   3 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 14    
+Module read_data_path 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module addr_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module address_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3971] The signal mem_S1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S2/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S3/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S4/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S5/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S6/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S7/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal mem_S8/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[1].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[1].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[3].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[3].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[5].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[5].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[7].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[7].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[9].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[9].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[11].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[11].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[13].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[13].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[15].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[15].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[17].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[17].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[19].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[19].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[21].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[21].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[23].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[23].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[25].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[25].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[27].mem_other0/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal inst_bcrypt[27].mem_other1/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'bcrypt_loop:/done_reg_reg[0]' (FDSE) to 'bcrypt_loop:/done_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bcrypt_loop:/init_index0_inferred/\init_index_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bcrypt_loop:/ptr0_inferred/\ptr_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (init_index_reg[0]) is unused and will be removed from module bcrypt_loop.
+WARNING: [Synth 8-3332] Sequential element (ptr_reg[0]) is unused and will be removed from module bcrypt_loop.
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][0]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][1]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][2]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][3]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][4]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][5]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][6]' (FDSE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][8]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][9]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][10]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][11]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][12]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][13]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][14]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][15]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][16]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][17]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][17]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][18]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][19]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][20]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][20]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][21]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][21]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][22]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][22]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][23]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][23]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][24]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][25]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][25]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][26]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][27]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][28]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][29]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'USER_LOGIC_Ii_0/mem_handshake_reg[1][30]' (FDRE) to 'USER_LOGIC_Ii_0/mem_handshake_reg[1][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mem_handshake_reg[1][31] )
+INFO: [Synth 8-3886] merging instance 'i_1/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.READ_DATA_SM_I/S_AXI_RRESP_reg[0]' (FDR) to 'i_1/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/S_AXI_BRESP_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/S_AXI_BRESP_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:14 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram:                             | mem_reg    | 512 x 32(WRITE_FIRST)  | W | R | 512 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized:                 | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|ram_initialized__parameterized0: | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R | 1 K x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
++---------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |bcrypt_loop     |          14|      7345|
+|2     |user_logic__GC0 |           1|      7099|
+|3     |bcrypt__GC0     |           1|       864|
++------+----------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:14 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |bcrypt_loop     |          14|      7345|
+|2     |user_logic__GC0 |           1|      7099|
+|3     |bcrypt__GC0     |           1|       864|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[1].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[3].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[5].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[7].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[9].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S3/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S4/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S5/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S6/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S7/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[11].bcrypt/mem_S8/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[13].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[13].bcrypt/mem_S1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[13].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance USER_LOGIC_I/inst_bcrypt[13].bcrypt/mem_S2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:23 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4618] Found max_fanout attribute set to 30 on net \AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/p_0_in11_in . Fanout reduced from 79 to 24 by creating 3 replicas.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:31 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:31 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:35 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:36 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:37 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:37 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |  1304|
+|3     |LUT1     |   677|
+|4     |LUT2     |  4684|
+|5     |LUT3     |  4352|
+|6     |LUT4     |  1737|
+|7     |LUT5     |  6190|
+|8     |LUT6     | 15398|
+|9     |MUXCY    |     9|
+|10    |MUXF7    |   544|
+|11    |RAMB36E1 |   140|
+|12    |FDRE     |  5013|
+|13    |FDSE     |     1|
+|14    |LD       |    32|
+|15    |IBUF     |   136|
+|16    |OBUF     |    50|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------+-----------------------------------+------+
+|      |Instance                                            |Module                             |Cells |
++------+----------------------------------------------------+-----------------------------------+------+
+|1     |top                                                 |                                   | 40269|
+|2     |  AXI_SLAVE_BURST_I                                 |axi_slave_burst                    |  1985|
+|3     |    \SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I       |address_decode                     |  1507|
+|4     |      \MEM_DECODE_GEN[0].MULTI_CS_GEN.MEM_SELECT_I  |pselect_f                          |     9|
+|5     |      \MEM_DECODE_GEN[1].MULTI_CS_GEN.MEM_SELECT_I  |pselect_f__parameterized0          |     9|
+|6     |      \MEM_DECODE_GEN[2].MULTI_CS_GEN.MEM_SELECT_I  |pselect_f__parameterized1          |     6|
+|7     |    \SUPPORT_RW_TRANSACTIONS.ADDRESS_GEN_I          |addr_gen                           |    88|
+|8     |    \SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I           |control_state_machine              |   327|
+|9     |      \ADDR_TOUT_GEN.APTO_COUNTER_I                 |counter_f                          |    51|
+|10    |      \DPHASE_TOUT_GEN.DPTO_COUNTER_I               |counter_f_150                      |    35|
+|11    |    \SUPPORT_RW_TRANSACTIONS.READ_DATA_SM_I         |read_data_path                     |    63|
+|12    |  USER_LOGIC_I                                      |user_logic                         | 38096|
+|13    |    \inst_bcrypt[11].bcrypt                         |bcrypt_loop                        |  2636|
+|14    |      mem_S1                                        |ram_142                            |    79|
+|15    |      mem_S2                                        |ram_143                            |   210|
+|16    |      mem_S3                                        |ram_144                            |    78|
+|17    |      mem_S4                                        |ram_145                            |   205|
+|18    |      mem_S5                                        |ram_146                            |    82|
+|19    |      mem_S6                                        |ram_147                            |   198|
+|20    |      mem_S7                                        |ram_148                            |    84|
+|21    |      mem_S8                                        |ram_149                            |   211|
+|22    |    \inst_bcrypt[11].mem_other0                     |ram_initialized                    |    93|
+|23    |    \inst_bcrypt[11].mem_other1                     |ram_initialized__parameterized0    |    25|
+|24    |    \inst_bcrypt[13].bcrypt                         |bcrypt_loop_0                      |  2642|
+|25    |      mem_S1                                        |ram_134                            |    80|
+|26    |      mem_S2                                        |ram_135                            |   209|
+|27    |      mem_S3                                        |ram_136                            |    78|
+|28    |      mem_S4                                        |ram_137                            |   205|
+|29    |      mem_S5                                        |ram_138                            |    82|
+|30    |      mem_S6                                        |ram_139                            |   198|
+|31    |      mem_S7                                        |ram_140                            |    84|
+|32    |      mem_S8                                        |ram_141                            |   211|
+|33    |    \inst_bcrypt[13].mem_other0                     |ram_initialized_1                  |    25|
+|34    |    \inst_bcrypt[13].mem_other1                     |ram_initialized__parameterized0_2  |    25|
+|35    |    \inst_bcrypt[15].bcrypt                         |bcrypt_loop_3                      |  2642|
+|36    |      mem_S1                                        |ram_126                            |    80|
+|37    |      mem_S2                                        |ram_127                            |   209|
+|38    |      mem_S3                                        |ram_128                            |    78|
+|39    |      mem_S4                                        |ram_129                            |   205|
+|40    |      mem_S5                                        |ram_130                            |    82|
+|41    |      mem_S6                                        |ram_131                            |   198|
+|42    |      mem_S7                                        |ram_132                            |    84|
+|43    |      mem_S8                                        |ram_133                            |   211|
+|44    |    \inst_bcrypt[15].mem_other0                     |ram_initialized_4                  |    57|
+|45    |    \inst_bcrypt[15].mem_other1                     |ram_initialized__parameterized0_5  |    25|
+|46    |    \inst_bcrypt[17].bcrypt                         |bcrypt_loop_6                      |  2642|
+|47    |      mem_S1                                        |ram_118                            |    80|
+|48    |      mem_S2                                        |ram_119                            |   209|
+|49    |      mem_S3                                        |ram_120                            |    78|
+|50    |      mem_S4                                        |ram_121                            |   205|
+|51    |      mem_S5                                        |ram_122                            |    82|
+|52    |      mem_S6                                        |ram_123                            |   198|
+|53    |      mem_S7                                        |ram_124                            |    84|
+|54    |      mem_S8                                        |ram_125                            |   211|
+|55    |    \inst_bcrypt[17].mem_other0                     |ram_initialized_7                  |    25|
+|56    |    \inst_bcrypt[17].mem_other1                     |ram_initialized__parameterized0_8  |    25|
+|57    |    \inst_bcrypt[19].bcrypt                         |bcrypt_loop_9                      |  2642|
+|58    |      mem_S1                                        |ram_110                            |    80|
+|59    |      mem_S2                                        |ram_111                            |   209|
+|60    |      mem_S3                                        |ram_112                            |    78|
+|61    |      mem_S4                                        |ram_113                            |   205|
+|62    |      mem_S5                                        |ram_114                            |    82|
+|63    |      mem_S6                                        |ram_115                            |   198|
+|64    |      mem_S7                                        |ram_116                            |    84|
+|65    |      mem_S8                                        |ram_117                            |   211|
+|66    |    \inst_bcrypt[19].mem_other0                     |ram_initialized_10                 |    34|
+|67    |    \inst_bcrypt[19].mem_other1                     |ram_initialized__parameterized0_11 |    25|
+|68    |    \inst_bcrypt[1].bcrypt                          |bcrypt_loop_12                     |  2642|
+|69    |      mem_S1                                        |ram_102                            |    80|
+|70    |      mem_S2                                        |ram_103                            |   209|
+|71    |      mem_S3                                        |ram_104                            |    78|
+|72    |      mem_S4                                        |ram_105                            |   205|
+|73    |      mem_S5                                        |ram_106                            |    82|
+|74    |      mem_S6                                        |ram_107                            |   198|
+|75    |      mem_S7                                        |ram_108                            |    84|
+|76    |      mem_S8                                        |ram_109                            |   211|
+|77    |    \inst_bcrypt[1].mem_other0                      |ram_initialized_13                 |    25|
+|78    |    \inst_bcrypt[1].mem_other1                      |ram_initialized__parameterized0_14 |    25|
+|79    |    \inst_bcrypt[21].bcrypt                         |bcrypt_loop_15                     |  2642|
+|80    |      mem_S1                                        |ram_94                             |    80|
+|81    |      mem_S2                                        |ram_95                             |   209|
+|82    |      mem_S3                                        |ram_96                             |    78|
+|83    |      mem_S4                                        |ram_97                             |   205|
+|84    |      mem_S5                                        |ram_98                             |    82|
+|85    |      mem_S6                                        |ram_99                             |   198|
+|86    |      mem_S7                                        |ram_100                            |    84|
+|87    |      mem_S8                                        |ram_101                            |   211|
+|88    |    \inst_bcrypt[21].mem_other0                     |ram_initialized_16                 |    25|
+|89    |    \inst_bcrypt[21].mem_other1                     |ram_initialized__parameterized0_17 |    25|
+|90    |    \inst_bcrypt[23].bcrypt                         |bcrypt_loop_18                     |  2642|
+|91    |      mem_S1                                        |ram_86                             |    80|
+|92    |      mem_S2                                        |ram_87                             |   209|
+|93    |      mem_S3                                        |ram_88                             |    78|
+|94    |      mem_S4                                        |ram_89                             |   205|
+|95    |      mem_S5                                        |ram_90                             |    82|
+|96    |      mem_S6                                        |ram_91                             |   198|
+|97    |      mem_S7                                        |ram_92                             |    84|
+|98    |      mem_S8                                        |ram_93                             |   211|
+|99    |    \inst_bcrypt[23].mem_other0                     |ram_initialized_19                 |    29|
+|100   |    \inst_bcrypt[23].mem_other1                     |ram_initialized__parameterized0_20 |    25|
+|101   |    \inst_bcrypt[25].bcrypt                         |bcrypt_loop_21                     |  2642|
+|102   |      mem_S1                                        |ram_78                             |    80|
+|103   |      mem_S2                                        |ram_79                             |   209|
+|104   |      mem_S3                                        |ram_80                             |    78|
+|105   |      mem_S4                                        |ram_81                             |   205|
+|106   |      mem_S5                                        |ram_82                             |    82|
+|107   |      mem_S6                                        |ram_83                             |   198|
+|108   |      mem_S7                                        |ram_84                             |    84|
+|109   |      mem_S8                                        |ram_85                             |   211|
+|110   |    \inst_bcrypt[25].mem_other0                     |ram_initialized_22                 |    53|
+|111   |    \inst_bcrypt[25].mem_other1                     |ram_initialized__parameterized0_23 |    25|
+|112   |    \inst_bcrypt[27].bcrypt                         |bcrypt_loop_24                     |  2642|
+|113   |      mem_S1                                        |ram_70                             |    80|
+|114   |      mem_S2                                        |ram_71                             |   209|
+|115   |      mem_S3                                        |ram_72                             |    78|
+|116   |      mem_S4                                        |ram_73                             |   205|
+|117   |      mem_S5                                        |ram_74                             |    82|
+|118   |      mem_S6                                        |ram_75                             |   198|
+|119   |      mem_S7                                        |ram_76                             |    84|
+|120   |      mem_S8                                        |ram_77                             |   211|
+|121   |    \inst_bcrypt[27].mem_other0                     |ram_initialized_25                 |    57|
+|122   |    \inst_bcrypt[27].mem_other1                     |ram_initialized__parameterized0_26 |    25|
+|123   |    \inst_bcrypt[3].bcrypt                          |bcrypt_loop_27                     |  2636|
+|124   |      mem_S1                                        |ram_62                             |    79|
+|125   |      mem_S2                                        |ram_63                             |   210|
+|126   |      mem_S3                                        |ram_64                             |    78|
+|127   |      mem_S4                                        |ram_65                             |   205|
+|128   |      mem_S5                                        |ram_66                             |    82|
+|129   |      mem_S6                                        |ram_67                             |   198|
+|130   |      mem_S7                                        |ram_68                             |    84|
+|131   |      mem_S8                                        |ram_69                             |   211|
+|132   |    \inst_bcrypt[3].mem_other0                      |ram_initialized_28                 |    33|
+|133   |    \inst_bcrypt[3].mem_other1                      |ram_initialized__parameterized0_29 |    25|
+|134   |    \inst_bcrypt[5].bcrypt                          |bcrypt_loop_30                     |  2642|
+|135   |      mem_S1                                        |ram_54                             |    80|
+|136   |      mem_S2                                        |ram_55                             |   209|
+|137   |      mem_S3                                        |ram_56                             |    78|
+|138   |      mem_S4                                        |ram_57                             |   205|
+|139   |      mem_S5                                        |ram_58                             |    82|
+|140   |      mem_S6                                        |ram_59                             |   198|
+|141   |      mem_S7                                        |ram_60                             |    84|
+|142   |      mem_S8                                        |ram_61                             |   211|
+|143   |    \inst_bcrypt[5].mem_other0                      |ram_initialized_31                 |    25|
+|144   |    \inst_bcrypt[5].mem_other1                      |ram_initialized__parameterized0_32 |    25|
+|145   |    \inst_bcrypt[7].bcrypt                          |bcrypt_loop_33                     |  2642|
+|146   |      mem_S1                                        |ram_46                             |    80|
+|147   |      mem_S2                                        |ram_47                             |   209|
+|148   |      mem_S3                                        |ram_48                             |    78|
+|149   |      mem_S4                                        |ram_49                             |   205|
+|150   |      mem_S5                                        |ram_50                             |    82|
+|151   |      mem_S6                                        |ram_51                             |   198|
+|152   |      mem_S7                                        |ram_52                             |    84|
+|153   |      mem_S8                                        |ram_53                             |   211|
+|154   |    \inst_bcrypt[7].mem_other0                      |ram_initialized_34                 |    57|
+|155   |    \inst_bcrypt[7].mem_other1                      |ram_initialized__parameterized0_35 |    25|
+|156   |    \inst_bcrypt[9].bcrypt                          |bcrypt_loop_36                     |  2642|
+|157   |      mem_S1                                        |ram                                |    80|
+|158   |      mem_S2                                        |ram_39                             |   209|
+|159   |      mem_S3                                        |ram_40                             |    78|
+|160   |      mem_S4                                        |ram_41                             |   205|
+|161   |      mem_S5                                        |ram_42                             |    82|
+|162   |      mem_S6                                        |ram_43                             |   198|
+|163   |      mem_S7                                        |ram_44                             |    84|
+|164   |      mem_S8                                        |ram_45                             |   211|
+|165   |    \inst_bcrypt[9].mem_other0                      |ram_initialized_37                 |    25|
+|166   |    \inst_bcrypt[9].mem_other1                      |ram_initialized__parameterized0_38 |    25|
++------+----------------------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:37 . Memory (MB): peak = 839.105 ; gain = 551.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 244 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:39 ; elapsed = 00:01:37 . Memory (MB): peak = 839.105 ; gain = 551.719
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:37 . Memory (MB): peak = 839.105 ; gain = 551.719
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'S_AXI_ACLK_IBUF_inst' of module 'IBUF'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'S_AXI_ARESETN_IBUF_inst' of module 'IBUF'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'S_AXI_AWVALID_IBUF_inst' of module 'IBUF'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'S_AXI_ARVALID_IBUF_inst' of module 'IBUF'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+INFO: [Netlist 29-17] Analyzing 1621 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+  LD => LDCE: 32 instances
+
+282 Infos, 212 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:01 ; elapsed = 00:02:02 . Memory (MB): peak = 839.105 ; gain = 559.480
+INFO: [Common 17-1381] The checkpoint 'd:/Projects/CoolCracker/Vivado/ip_repo/edit_Bcrypt_v4_5.runs/synth_1/bcrypt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 839.105 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 839.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 29 15:08:17 2017...

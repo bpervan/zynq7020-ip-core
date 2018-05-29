@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/proc_common_pkg.vhd"
+vhdl axi_slave_burst_v1_00_a  "../../../Bcrypt_4.5/src/addr_gen.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/ipif_pkg.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/family_support.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/counter_f.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/pselect_f.vhd"
+vhdl axi_slave_burst_v1_00_a  "../../../Bcrypt_4.5/src/address_decode.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/or_gate128.vhd"
+vhdl axi_slave_burst_v1_00_a  "../../../Bcrypt_4.5/src/control_state_machine.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/cntr_incr_decr_addn_f.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/muxf_struct_f.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/dynshreg_f.vhd"
+vhdl proc_common_v3_00_a  "../../../Bcrypt_4.5/src/srl_fifo_rbu_f.vhd"
+vhdl axi_slave_burst_v1_00_a  "../../../Bcrypt_4.5/src/read_data_path.vhd"
+vhdl axi_slave_burst_v1_00_a  "../../../Bcrypt_4.5/src/axi_slave_burst.vhd"
+vhdl xil_defaultlib  "../../../Bcrypt_4.5/src/bcrypt.vhd"
+
+# Do not sort compile order
+nosort

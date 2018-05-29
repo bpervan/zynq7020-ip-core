@@ -1,0 +1,7 @@
+Running: xsim.dir/bcrypt_behav/xsimk.exe -simmode gui -wdb bcrypt_behav.wdb -simrunnum 0 -socket 62243
+Design successfully loaded
+Design Loading Memory Usage: 8636 KB (Peak: 8636 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 10216 KB (Peak: 10216 KB)
+Simulation CPU Usage: 78 ms

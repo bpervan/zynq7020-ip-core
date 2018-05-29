@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1506690352">
+  <File Type="PA-TCL" Name="bcrypt.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="bcrypt_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="bcrypt.vds"/>
+  <File Type="RDS-UTIL" Name="bcrypt_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="bcrypt_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="bcrypt.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bcrypt_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="bcrypt_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/bcrypt_loop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/ram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/ram_initialized.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/user_logic.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/proc_common_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/addr_gen.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_slave_burst_v1_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/ipif_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/family_support.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/counter_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/pselect_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/address_decode.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_slave_burst_v1_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/or_gate128.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/control_state_machine.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_slave_burst_v1_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/cntr_incr_decr_addn_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/muxf_struct_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/dynshreg_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/srl_fifo_rbu_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/read_data_path.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_slave_burst_v1_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/axi_slave_burst.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_slave_burst_v1_00_a"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/bcrypt.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/others_half1.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/others_half2.mif">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Bcrypt_4.5/src/family.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="proc_common_v3_00_a"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bcrypt"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

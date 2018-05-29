@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/bcrypt_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcrypt_loop
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/ram_initialized.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_initialized
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/Bcrypt_4.5/src/user_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module user_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/projects/coolcracker/vivado/ip_repo/edit_Bcrypt_v4_5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
